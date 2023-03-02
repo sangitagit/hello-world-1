@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('maven') {
             steps {
-                echo 'Hello World'
+                sh 'mvn package'
             }
         }
     }
